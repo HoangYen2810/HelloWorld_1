@@ -36,45 +36,51 @@
             // 
             // lblHelloWorld
             // 
-            this.lblHelloWorld.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lblHelloWorld.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblHelloWorld.AutoSize = true;
-            this.lblHelloWorld.Font = new System.Drawing.Font("Segoe Script", 27.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHelloWorld.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblHelloWorld.Font = new System.Drawing.Font("Segoe Script", 33F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHelloWorld.ForeColor = System.Drawing.Color.Purple;
-            this.lblHelloWorld.Location = new System.Drawing.Point(28, 69);
+            this.lblHelloWorld.Location = new System.Drawing.Point(4, 91);
             this.lblHelloWorld.Name = "lblHelloWorld";
-            this.lblHelloWorld.Size = new System.Drawing.Size(0, 58);
-            this.lblHelloWorld.TabIndex = 1;
+            this.lblHelloWorld.Size = new System.Drawing.Size(2, 72);
+            this.lblHelloWorld.TabIndex = 0;
+            this.lblHelloWorld.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnShow
             // 
-            this.btnShow.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnShow.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnShow.Font = new System.Drawing.Font("Mistral", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnShow.Location = new System.Drawing.Point(75, 198);
+            this.btnShow.Location = new System.Drawing.Point(82, 251);
             this.btnShow.Name = "btnShow";
             this.btnShow.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnShow.Size = new System.Drawing.Size(198, 39);
+            this.btnShow.Size = new System.Drawing.Size(215, 48);
             this.btnShow.TabIndex = 0;
             this.btnShow.Text = "Show Hello World";
+            this.btnShow.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnShow.UseVisualStyleBackColor = true;
             this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel1.Controls.Add(this.lblHelloWorld);
             this.panel1.Controls.Add(this.btnShow);
-            this.panel1.Location = new System.Drawing.Point(2, 0);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(365, 274);
+            this.panel1.Size = new System.Drawing.Size(384, 311);
             this.panel1.TabIndex = 2;
             // 
             // frmHelloWorld
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(368, 274);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(384, 311);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.MinimumSize = new System.Drawing.Size(400, 350);
             this.Name = "frmHelloWorld";
             this.Text = "Hello World";
             this.panel1.ResumeLayout(false);
